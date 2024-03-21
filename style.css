@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: lightgreen;
+    background-repeat: no-repeat;
+    background-size: cover;
+   background-position: center;
+}
+.menu-bar{
+    background-color: green;
+    text-align: center;
+}
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+}
+.menu-bar ul li{
+    padding: 14px;
+    margin: 14px;
+    width: 190px;
+    
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color: black;
+}
+.hover,.menu-bar ul li:hover {
+    background: #2bab2b;
+    border-radius: 5px;
+}
+.submenu-1{
+    display: none;
+}
+.menu-bar ul li:hover .submenu-1{
+    display: block;
+    position: absolute;
+    background: green;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.menu-bar ul li:hover .submenu-1 ul{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .submenu-1 ul li{
+    width: 120px;
+    padding: 10px;
+    border-bottom: 3px solis black;
+    text-align: left;
+}
+.menu-bar ul li:hover .submenu-1 ul li a:hover{
+    color: black;
+}
+.more{
+    color: lightgreen;
+    border: 4px solid white;
+    background-color: white;
+    width: fit-content;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.img{
+    background: url(nune.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 100px;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+.yt{
+    text-decoration: none;
+    color: white;
+}
+p{
+    font-size: 3vh;
+    text-shadow: 3vh black;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+  header {
+    background-color: red;
+    border-radius: 40px;
+  }
+  nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+  
+  }
+  @media (min-width: 768px) {
+    nav .logo-container {
+      max-width: 250px;
+    }
+  }
+  nav .logo-container a img {
+    margin: 15px 5px;
+    }
+  nav .navigation-container {
+    width: 100%;
+  }
+  nav .navigation-container ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  nav .navigation-container ul li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  nav .navigation-container ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1rem;
+    font-style: italic;
+    color: #FFFFFF;
+    padding: 10px 5px;
+    transition: all 0.9s ease-out;
+  }
+  @media (min-width: 768px) {
+    nav .navigation-container ul li a {
+      font-size: 1.125rem;
+      padding: 30px 15px;
+    }
+  }
+  nav .navigation-container ul li a:hover {
+    background-color: #184ee2;
+    color: #f7f4f4;
+    box-shadow: 2px 8px 12px;
+    border-radius: 32px; 
+  }
+  table, th, td {
+    border: 3px solid red;
+    border-radius: 5px;
+    
+  }
+  table, th, td {
+    background-color:whitesmoke;
+  }
+  table {
+    width: 700px;
+    color:green;
+  }
+  td {
+    text-align: center;
+  }
+  input{
+    border-radius: 20%;
+    padding: 10px;
+  }
+  button{
+    color: green;
+    background-color: lightgreen;
+    border-radius: 20%;
+    padding: 10px
+  }
+</style>
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  <title>Home</title>
+</head>
+<body style="background-color:lightgreen;">
+  
+  <center>
+  <table>
+    <h1 style="color: whitesmoke;">Tukesitify Employee's Data</h1>
+    <tr>
+      <th>S/N</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Phone Number</th>
+    </tr>
+    <tr>
+      <td>01</td>
+      <td>Ekekezie</td>
+      <td>Christiana</td>
+      <td>00967878352</td>
+    </tr>
+    <tr>
+      <td>02</td>
+      <td>Chinazum</td>
+      <td>Isabella</td>
+      <td>08076878934</td>
+    </tr>
+    <tr>
+      <td>03</td>
+      <td>Akpan</td>
+      <td>Clement</td>
+      <td>07084569234</td>
+    </tr>
+    <tr>
+      <td>04</td>
+      <td>Adeyemi</td>
+      <td>Ebenezer</td>
+      <td>08134568254</td>
+    </tr>
+    <tr>
+      <td>05</td>
+      <td>Atukale</td>
+      <td>Abdulhafees</td>
+      <td>09026588443</td>
+    </tr>
+    <tr>
+      <td>06</td>
+      <td>Adeuja</td>
+      <td>Emmanuel</td>
+      <td>09053647865</td>
+    </tr>
+    <tr>
+      <td>07</td>
+      <td>Mumuni</td>
+      <td>Faruq</td>
+      <td>080265583248</td>
+    </tr>
+    <tr>
+      <td>08</td>
+      <td>Anietie</td>
+      <td>Caleb</td>
+      <td>07025463214</td>
+    </tr>
+  </table>
+  <p><input type="phone number" placeholder="Enter number above to place call"><button>Call</button> </p>
+</Center>
+</body>
+</html>

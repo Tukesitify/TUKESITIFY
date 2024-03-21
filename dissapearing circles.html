@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #shape{
+            background-color: red;
+            height: 100px;
+            width: 100px;
+            display: none;
+            position: relative;
+           
+        }
+        body{
+            background-color: lightblue;
+
+        }
+    </style>
+</head><center>
+<body><p>Your time is:<span id="time"></span</p>
+
+    <p id="shape"></p>
+
+    
+    <script>
+         var start= new Date().getTime()
+        function appear (){
+           
+            document.getElementById("shape").style.display = "block"
+            start= new Date().getTime()
+        }
+        function reappear(){ 
+            var top=Math.random()*500
+            var left=Math.random()*300
+            var width=Math.random()*300
+            
+            setTimeout(appear, Math.random()*2000)
+
+            document.getElementById("shape").style.top=top+"px"
+            document.getElementById("shape").style.left=left+"px"
+            document.getElementById("shape").style.width=width+"px"
+            document.getElementById("shape").style.height=width+"px"
+            if (Math.random()>0.6){
+                document.getElementById("shape").style.borderRadius= "50%"
+            }
+            else{
+                document.getElementById("shape").style.borderRadius= "0%"
+            }
+        }
+        reappear();
+        
+        var start= new Date().getTime()
+        document.getElementById("shape").onclick=function(){
+            var end= new Date().getTime() 
+            var timetaken=((end-start)/1000)
+            document.getElementById("shape").style.display = "none"
+           document.getElementById("time").innerHTML= timetaken + "s"
+        reappear();
+        }
+                
+        
+    </script>
+</body></center>
+</html>
